@@ -1,0 +1,65 @@
+h1{
+    background-color: yellow;
+    color: blue;
+}
+
+ul{
+    background-color: rgb(66, 62, 62);
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+li{
+    list-style-type: none;
+    float: left;
+    padding: 10px;
+    margin: 2px;
+    color: white;
+}
+
+a:link,a:visited,a:active,a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+iframe{
+    width: 100%;
+    min-height: 500px;
+    border: none;
+}
+
+td{
+    padding: 3px;
+    font-family: arial;
+    width: 130px;
+}
+
+input[type="submit"]{
+    background-color: darkslategray;
+    color: white;
+    border: none;
+    padding: 5px;
+}
+
+
+input[type="submit"]:hover{
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+th{
+    background-color: rgb(25, 110, 131);
+    color: white;
+    width: 150px;
+    padding: 5px;
+}
+
+td{
+    background-color: rgb(207, 219, 223);
+    color: rgb(33, 33, 65);
+    width: 150px;
+    padding: 5px;
+}

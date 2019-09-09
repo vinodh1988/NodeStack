@@ -1,16 +1,19 @@
 var express=require('express');
 var path=require("path");
 var froute=require("./server/routes/filedata");
+var mroute=require("./server/routes/moduledata");
 var bodyParser=require("body-parser");
 var app=express();
 
 app.use(express.static(path.join(__dirname,"public/static/css")));
 app.use(express.static(path.join(__dirname,"public/static/js")));
 app.use(express.static(path.join(__dirname,"public/static/pages")));
+app.use(express.static(path.join(__dirname,"node_modules/jquery/dist")));
 
 app.use(bodyParser.urlencoded()); //to parse the data in the request
 
 app.use("/filedata",froute);
+app.use("/moduledata",mroute);
 
 app.set('views', path.join(__dirname, 'public/views'));
 app.set('view engine', 'pug');

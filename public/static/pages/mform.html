@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+    </head>
+<body>
+<div>
+<form action="moduledata/add" method="post" enctype="multipart/form-data">
+    <table>
+        <tr>
+            <td>Module Code</td>
+            <td><input type="text" name="mcode"></td>
+        </tr>
+        <tr>
+                <td>Course Name</td>
+                <td><input type="text" name="mname"></td>
+        </tr>
+        <tr>
+                <td>Duration</td>
+                <td><input type="text" name="duration"></td>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td><input type="text" name="price"></td>
+        </tr>
+        <tr>
+            <td>description</td>
+            <td><textarea name="description"></textarea></td>
+      </tr>
+      <tr>
+        <td>Upload file</td>
+        <td><input type="file" name="cimage"></td>
+      </tr>
+        <tr>
+            <td colspan=2 align="center"><input type="submit" value="store"></td>
+        </tr>
+    </table>
+</form>
+</div>
+</body>
+</html>

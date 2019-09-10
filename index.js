@@ -2,6 +2,7 @@ var express=require('express');
 var path=require("path");
 var froute=require("./server/routes/filedata");
 var mroute=require("./server/routes/moduledata");
+const fileUpload = require('express-fileupload');
 var bodyParser=require("body-parser");
 var app=express();
 
@@ -10,6 +11,7 @@ app.use(express.static(path.join(__dirname,"public/static/js")));
 app.use(express.static(path.join(__dirname,"public/static/pages")));
 app.use(express.static(path.join(__dirname,"node_modules/jquery/dist")));
 
+app.use(fileUpload()); //to parse the multipart form data
 app.use(bodyParser.urlencoded()); //to parse the data in the request
 
 app.use("/filedata",froute);

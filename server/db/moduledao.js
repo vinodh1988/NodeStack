@@ -7,7 +7,12 @@ var operations={
           connection.query("select * from moduledetails",callback);
     },
 
-  insert:function(){},
+  insert:function(module,callback){
+       connection.query("insert into moduledetails values(?,?,?,?,?,?)",
+       [module.mcode,
+      module.mname,module.duration,module.price,module.description,module.filename],
+      callback);
+  },
   update:function(){}
    
 }
